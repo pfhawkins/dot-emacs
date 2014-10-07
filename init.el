@@ -1,11 +1,5 @@
-;; (require 'cask "~/.cask/cask.el")
-;; (cask-initialize)
-;; (require 'pallet)
 (add-to-list 'load-path "~/.emacs.d/custom")
 (load "00commond-setup.el")
-;;(load "01ruby.el")
-
-;;(load "03auto-complete.el")
 
 (add-to-list 'load-path "~/.emacs.d/el-get/el-get")
 
