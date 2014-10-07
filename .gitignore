@@ -3,3 +3,6 @@ tramp
 el-get/*
 .smex-items
 ac-comphist.dat
+Cask
+.cask
+elpa/*
