@@ -8,6 +8,10 @@
 
 (add-to-list 'interpreter-mode-alist '("ruby" . enh-ruby-mode))
 
+;; rspec
+(require 'rspec-mode)
+(add-to-list 'auto-mode-alist '("\\.spec" . rspec-mode))
+
 (setq enh-ruby-bounce-deep-indent t)
 (setq enh-ruby-hanging-brace-indent-level 2)
 

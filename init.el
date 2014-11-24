@@ -1,6 +1,4 @@
 (add-to-list 'load-path "~/.emacs.d/custom")
-(load "00commond-setup.el")
-
 (add-to-list 'load-path "~/.emacs.d/el-get/el-get")
 
 (unless (require 'el-get nil t)
@@ -12,7 +10,8 @@
 
 ;; now either el-get is `require'd already, or have been `load'ed by the
 ;; el-get installer.
-
+(add-to-list 'package-archives
+  '("melpa" . "http://melpa.milkbox.net/packages/") t)
 ;; set local recipes, el-get-sources should only accept PLIST element
 (setq
  el-get-sources
@@ -67,3 +66,6 @@
 
 ;; install new packages and init already installed packages
 (el-get 'sync my:el-get-packages)
+
+(load "00commond-setup.el")
+(load "01ruby.el")
